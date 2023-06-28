@@ -1,0 +1,492 @@
+{
+    "type": "Program",
+    "start": 0,
+    "end": 657,
+    "body": [
+      {
+        "type": "VariableDeclaration",
+        "start": 77,
+        "end": 138,
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 83,
+            "end": 137,
+            "id": {
+              "type": "Identifier",
+              "start": 83,
+              "end": 89,
+              "name": "number"
+            },
+            "init": {
+              "type": "CallExpression",
+              "start": 92,
+              "end": 137,
+              "callee": {
+                "type": "Identifier",
+                "start": 92,
+                "end": 100,
+                "name": "parseInt"
+              },
+              "arguments": [
+                {
+                  "type": "CallExpression",
+                  "start": 101,
+                  "end": 136,
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 101,
+                    "end": 107,
+                    "name": "prompt"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "start": 108,
+                      "end": 135,
+                      "value": "Enter a positive number: ",
+                      "raw": "\"Enter a positive number: \""
+                    }
+                  ],
+                  "optional": false
+                }
+              ],
+              "optional": false
+            }
+          }
+        ],
+        "kind": "const"
+      },
+      {
+        "type": "VariableDeclaration",
+        "start": 139,
+        "end": 158,
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 143,
+            "end": 157,
+            "id": {
+              "type": "Identifier",
+              "start": 143,
+              "end": 150,
+              "name": "isPrime"
+            },
+            "init": {
+              "type": "Literal",
+              "start": 153,
+              "end": 157,
+              "value": true,
+              "raw": "true"
+            }
+          }
+        ],
+        "kind": "let"
+      },
+      {
+        "type": "IfStatement",
+        "start": 193,
+        "end": 657,
+        "test": {
+          "type": "BinaryExpression",
+          "start": 197,
+          "end": 209,
+          "left": {
+            "type": "Identifier",
+            "start": 197,
+            "end": 203,
+            "name": "number"
+          },
+          "operator": "===",
+          "right": {
+            "type": "Literal",
+            "start": 208,
+            "end": 209,
+            "value": 1,
+            "raw": "1"
+          }
+        },
+        "consequent": {
+          "type": "BlockStatement",
+          "start": 211,
+          "end": 275,
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "start": 217,
+              "end": 273,
+              "expression": {
+                "type": "CallExpression",
+                "start": 217,
+                "end": 272,
+                "callee": {
+                  "type": "MemberExpression",
+                  "start": 217,
+                  "end": 228,
+                  "object": {
+                    "type": "Identifier",
+                    "start": 217,
+                    "end": 224,
+                    "name": "console"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 225,
+                    "end": 228,
+                    "name": "log"
+                  },
+                  "computed": false,
+                  "optional": false
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "start": 229,
+                    "end": 271,
+                    "value": "1 is neither prime nor composite number.",
+                    "raw": "\"1 is neither prime nor composite number.\""
+                  }
+                ],
+                "optional": false
+              }
+            }
+          ]
+        },
+        "alternate": {
+          "type": "IfStatement",
+          "start": 319,
+          "end": 657,
+          "test": {
+            "type": "BinaryExpression",
+            "start": 323,
+            "end": 333,
+            "left": {
+              "type": "Identifier",
+              "start": 323,
+              "end": 329,
+              "name": "number"
+            },
+            "operator": ">",
+            "right": {
+              "type": "Literal",
+              "start": 332,
+              "end": 333,
+              "value": 1,
+              "raw": "1"
+            }
+          },
+          "consequent": {
+            "type": "BlockStatement",
+            "start": 335,
+            "end": 657,
+            "body": [
+              {
+                "type": "ForStatement",
+                "start": 379,
+                "end": 508,
+                "init": {
+                  "type": "VariableDeclaration",
+                  "start": 384,
+                  "end": 393,
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "start": 388,
+                      "end": 393,
+                      "id": {
+                        "type": "Identifier",
+                        "start": 388,
+                        "end": 389,
+                        "name": "i"
+                      },
+                      "init": {
+                        "type": "Literal",
+                        "start": 392,
+                        "end": 393,
+                        "value": 2,
+                        "raw": "2"
+                      }
+                    }
+                  ],
+                  "kind": "let"
+                },
+                "test": {
+                  "type": "BinaryExpression",
+                  "start": 395,
+                  "end": 405,
+                  "left": {
+                    "type": "Identifier",
+                    "start": 395,
+                    "end": 396,
+                    "name": "i"
+                  },
+                  "operator": "<",
+                  "right": {
+                    "type": "Identifier",
+                    "start": 399,
+                    "end": 405,
+                    "name": "number"
+                  }
+                },
+                "update": {
+                  "type": "UpdateExpression",
+                  "start": 407,
+                  "end": 410,
+                  "operator": "++",
+                  "prefix": false,
+                  "argument": {
+                    "type": "Identifier",
+                    "start": 407,
+                    "end": 408,
+                    "name": "i"
+                  }
+                },
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 412,
+                  "end": 508,
+                  "body": [
+                    {
+                      "type": "IfStatement",
+                      "start": 422,
+                      "end": 502,
+                      "test": {
+                        "type": "BinaryExpression",
+                        "start": 426,
+                        "end": 441,
+                        "left": {
+                          "type": "BinaryExpression",
+                          "start": 426,
+                          "end": 436,
+                          "left": {
+                            "type": "Identifier",
+                            "start": 426,
+                            "end": 432,
+                            "name": "number"
+                          },
+                          "operator": "%",
+                          "right": {
+                            "type": "Identifier",
+                            "start": 435,
+                            "end": 436,
+                            "name": "i"
+                          }
+                        },
+                        "operator": "==",
+                        "right": {
+                          "type": "Literal",
+                          "start": 440,
+                          "end": 441,
+                          "value": 0,
+                          "raw": "0"
+                        }
+                      },
+                      "consequent": {
+                        "type": "BlockStatement",
+                        "start": 443,
+                        "end": 502,
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "start": 457,
+                            "end": 473,
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "start": 457,
+                              "end": 472,
+                              "operator": "=",
+                              "left": {
+                                "type": "Identifier",
+                                "start": 457,
+                                "end": 464,
+                                "name": "isPrime"
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "start": 467,
+                                "end": 472,
+                                "value": false,
+                                "raw": "false"
+                              }
+                            }
+                          },
+                          {
+                            "type": "BreakStatement",
+                            "start": 486,
+                            "end": 492,
+                            "label": null
+                          }
+                        ]
+                      },
+                      "alternate": null
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "IfStatement",
+                "start": 514,
+                "end": 655,
+                "test": {
+                  "type": "Identifier",
+                  "start": 518,
+                  "end": 525,
+                  "name": "isPrime"
+                },
+                "consequent": {
+                  "type": "BlockStatement",
+                  "start": 527,
+                  "end": 586,
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 537,
+                      "end": 580,
+                      "expression": {
+                        "type": "CallExpression",
+                        "start": 537,
+                        "end": 579,
+                        "callee": {
+                          "type": "MemberExpression",
+                          "start": 537,
+                          "end": 548,
+                          "object": {
+                            "type": "Identifier",
+                            "start": 537,
+                            "end": 544,
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 545,
+                            "end": 548,
+                            "name": "log"
+                          },
+                          "computed": false,
+                          "optional": false
+                        },
+                        "arguments": [
+                          {
+                            "type": "TemplateLiteral",
+                            "start": 549,
+                            "end": 578,
+                            "expressions": [
+                              {
+                                "type": "Identifier",
+                                "start": 552,
+                                "end": 558,
+                                "name": "number"
+                              }
+                            ],
+                            "quasis": [
+                              {
+                                "type": "TemplateElement",
+                                "start": 550,
+                                "end": 550,
+                                "value": {
+                                  "raw": "",
+                                  "cooked": ""
+                                },
+                                "tail": false
+                              },
+                              {
+                                "type": "TemplateElement",
+                                "start": 559,
+                                "end": 577,
+                                "value": {
+                                  "raw": " is a prime number",
+                                  "cooked": " is a prime number"
+                                },
+                                "tail": true
+                              }
+                            ]
+                          }
+                        ],
+                        "optional": false
+                      }
+                    }
+                  ]
+                },
+                "alternate": {
+                  "type": "BlockStatement",
+                  "start": 592,
+                  "end": 655,
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 602,
+                      "end": 649,
+                      "expression": {
+                        "type": "CallExpression",
+                        "start": 602,
+                        "end": 648,
+                        "callee": {
+                          "type": "MemberExpression",
+                          "start": 602,
+                          "end": 613,
+                          "object": {
+                            "type": "Identifier",
+                            "start": 602,
+                            "end": 609,
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 610,
+                            "end": 613,
+                            "name": "log"
+                          },
+                          "computed": false,
+                          "optional": false
+                        },
+                        "arguments": [
+                          {
+                            "type": "TemplateLiteral",
+                            "start": 614,
+                            "end": 647,
+                            "expressions": [
+                              {
+                                "type": "Identifier",
+                                "start": 617,
+                                "end": 623,
+                                "name": "number"
+                              }
+                            ],
+                            "quasis": [
+                              {
+                                "type": "TemplateElement",
+                                "start": 615,
+                                "end": 615,
+                                "value": {
+                                  "raw": "",
+                                  "cooked": ""
+                                },
+                                "tail": false
+                              },
+                              {
+                                "type": "TemplateElement",
+                                "start": 624,
+                                "end": 646,
+                                "value": {
+                                  "raw": " is a not prime number",
+                                  "cooked": " is a not prime number"
+                                },
+                                "tail": true
+                              }
+                            ]
+                          }
+                        ],
+                        "optional": false
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "alternate": null
+        }
+      }
+    ],
+    "sourceType": "module"
+  }
